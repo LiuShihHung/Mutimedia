@@ -1,9 +1,8 @@
 %DCT
-function [output1 , output2] = DCT(input)
+function [output1 , output2] = DCT(input , n)
 
 [h,w,d] = size(input) ;
 
-n = 1 ;
 
 input = im2double(input) ;
 
