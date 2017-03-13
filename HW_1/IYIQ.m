@@ -1,6 +1,6 @@
 function [ output ] = IYIQ( input )
 
-f = [.229 .587 .114 ; .595716 -.274453 -.321263 ; .211456 -.522591 .311135];
+f = [.229 .587 .114 ; .596 -.274 -.322 ; .211 -.523 .312];
 
 [h,w,d] = size(input) ;
 
@@ -10,10 +10,10 @@ YIQ = zeros(h,w,d) ;
 
 for i = 1 : h
     for j = 1 : w
-        trans = input (i,j,:) ;
-        trans = reshape(trans,[1 3 ]);  
-        trans = trans*inv(f) ;
-        output(i,j,:) = trans ; 
+        s = input (i,j,:) ;
+        s = reshape(s,[1 3 ]);  
+        s = s*inv(f) ;
+        output(i,j,:) = s ; 
     end
 end
 
