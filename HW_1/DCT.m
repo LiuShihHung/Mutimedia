@@ -16,7 +16,7 @@ f = zeros(8,8) ;
 
 for i = 1 : 8
     for j = 1 : 8
-        if i == 1 || j == 1
+        if i == 1 
             f(i,j) =  1 / sqrt(8) ;
         else 
             f(i,j) = cos(pi * (2*(j-1) +1)*(i-1)/16) * sqrt(2/8) ;

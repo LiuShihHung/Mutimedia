@@ -1,6 +1,6 @@
 src = imread('lalaland.png') ;
 
-n = 2; 
+n = 8; 
 src = im2double(src) ;
 out3 =   YIQ(src) ;
 %imwrite(out3 ,'1_b1.png') ;
