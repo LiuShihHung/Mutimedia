@@ -5,7 +5,7 @@ function [ output ] = NN( input )
 finetune = 0.49999999999;
 
 
-H =floor( h*4) ;
+H =floor(h*4) ;
 W = floor(w*4) ;
 output = zeros(H,W,3 ,'uint8') ;
 
