@@ -5,3 +5,4 @@ c = imresize(src3, 4, 'nearest');
 psnr1 = computePSNR(src4 ,u);
 disp(psnr1) ;
 %imshow(u) ;
+%imwrite(u ,'NN.png') ;
