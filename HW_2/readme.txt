@@ -1,0 +1,4 @@
+這次作業只需要跑HW2_Q1和HW2_Q2即可得到結果
+Q1的音樂都放在HW_2_a_audio裡面
+Q1所plot的圖片都放在HW2_a_picture裡面
+Q2所需要的圖片都放在HW_2_b_picture裡面
