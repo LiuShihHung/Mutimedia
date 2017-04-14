@@ -80,7 +80,7 @@ end
 % end
 if strcmp(windowName,'Blackmann') == 1
     for i = 1 : N
-        h(i) = h(i) *(0.42 - 0.5*cos(2*pi*(i-1)/N)+0.08*cos(4*pi*(i-1)/N)) ;
+        h(i) = h(i) *(0.42 - 0.5*cos(2*pi*(i-1)/(N-1))+0.08*cos(4*pi*(i-1)/(N-1))) ;
     end
 end
 
