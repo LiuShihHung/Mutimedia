@@ -6,7 +6,8 @@ SAD = 0 ;
 min = realmax ;
 vector = [0,0] ;
 output = zeros(block_size,block_size,3);
-output  = im2double(output);     
+output  = im2double(output); 
+
 
 [h,w,d] = size(reference_image) ;
 t = target_image(index_i:index_i+block_size-1, index_j:index_j+block_size-1,:);
@@ -23,6 +24,7 @@ for k = -range : range
             min = SAD ;
             vector = [k,l];
         end
+        
         end
     end
 end
